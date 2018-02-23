@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Api Fun</title>
+
+    <style>
+        input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <h1>Enter a US Zip code</h1>
+        <Label for="zip">ZIP Code</Label>
+        <input autocomplete="off" id="zip" type="number" maxlength="5" title="Five digit zip code" />
+
+        <div id="map"></div>
+        
+        <div>
+            <iframe width="480" 
+            height="270" 
+            src="http://www.ustream.tv/embed/9408562?html5ui&autoplay=1" 
+            scrolling="no" 
+            allowfullscreen 
+            webkitallowfullscreen 
+            frameborder="0" 
+            style="border: 0 none transparent;"></iframe>
+        </div>
+
+        <ul></ul>
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy8qqg-wIt9ta05_3DYkEaSZ0Iz5mSfz0"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
